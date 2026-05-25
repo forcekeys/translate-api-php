@@ -3,7 +3,7 @@
 [![Packagist Version](https://img.shields.io/packagist/v/forcekeys/translate-api.svg)](https://packagist.org/packages/forcekeys/translate-api)
 [![PHP Version](https://img.shields.io/packagist/php-v/forcekeys/translate-api.svg)](https://packagist.org/packages/forcekeys/translate-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-deeptranslate.online-blue.svg)](https://deeptranslate.online/docs)
+[![Documentation](https://img.shields.io/badge/docs-forcekeys.com-blue.svg)](https://translate.forcekeys.com/docs)
 
 Official PHP client library for the TranslateAPI translation service. Translate text, documents, and images between 70+ languages with a simple, intuitive interface.
 
@@ -38,7 +38,7 @@ composer install
 
 ### 1. Get Your API Key
 
-First, sign up at [deeptranslate.online](https://deeptranslate.online) to get your free API key.
+First, sign up at [translate.forcekeys.com](https://translate.forcekeys.com) to get your free API key.
 
 ### 2. Basic Usage
 
@@ -217,7 +217,7 @@ $httpClient = new Client([
 
 $api = new TranslateAPI('your_api_key', [
     'http_client' => $httpClient,
-    'base_url' => 'https://api.deeptranslate.online/api/v1',
+    'base_url' => 'https://api.translate.forcekeys.com/api/v1',
 ]);
 ```
 
@@ -269,7 +269,7 @@ new TranslateAPI(string $apiKey, array $options = [])
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `base_url` | string | `https://api.deeptranslate.online/api/v1` | API base URL |
+| `base_url` | string | `https://api.translate.forcekeys.com/api/v1` | API base URL |
 | `http_client` | Psr\Http\Client\ClientInterface | GuzzleHttp\Client | HTTP client instance |
 | `timeout` | int | 30 | Request timeout in seconds |
 | `retries` | int | 3 | Number of retry attempts |
@@ -359,7 +359,7 @@ Rate limits vary by plan:
 return [
     'forcekeys' => [
         'api_key' => env('FORCEKEYS_API_KEY'),
-        'base_url' => env('FORCEKEYS_BASE_URL', 'https://api.deeptranslate.online/api/v1'),
+        'base_url' => env('FORCEKEYS_BASE_URL', 'https://api.translate.forcekeys.com/api/v1'),
     ],
 ];
 
@@ -410,9 +410,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-- **Documentation**: [deeptranslate.online/docs](https://deeptranslate.online/docs)
+- **Documentation**: [translate.forcekeys.com/docs](https://translate.forcekeys.com/docs)
 - **Issues**: [GitHub Issues](https://github.com/forcekeys/translate-api-php/issues)
-- **Email**: support@deeptranslate.online
+- **Email**: support@forcekeys.com
 - **Discord**: [Join our Discord](https://discord.gg/forcekeys)
 
 ## License

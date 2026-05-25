@@ -34,7 +34,7 @@ class TranslateAPI extends TranslateAPIClient
      */
     public function __construct(
         ?string $apiKey = null,
-        string $baseUrl = 'https://api.deeptranslate.online/api/v1',
+        string $baseUrl = 'https://api.translate.forcekeys.com/api/v1',
         int $timeout = 30
     ) {
         parent::__construct($apiKey, $baseUrl, $timeout);

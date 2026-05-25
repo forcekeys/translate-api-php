@@ -35,7 +35,7 @@ class TranslateAPIClient
     private string $baseUrl;
     private int $timeout;
     
-    private const BASE_URL = 'https://api.deeptranslate.online/api/v1';
+    private const BASE_URL = 'https://api.translate.forcekeys.com/api/v1';
     private const DEFAULT_TIMEOUT = 30;
     
     /**
